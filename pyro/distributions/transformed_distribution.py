@@ -7,6 +7,8 @@ from torch.autograd import Variable
 from pyro.distributions.distribution import Distribution
 from pyro.nn import AutoRegressiveNN
 
+import pdb
+
 
 class TransformedDistribution(Distribution):
     """

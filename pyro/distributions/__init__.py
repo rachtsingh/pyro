@@ -4,6 +4,7 @@ from __future__ import absolute_import, division, print_function
 from pyro.distributions.bernoulli import Bernoulli
 from pyro.distributions.beta import Beta
 from pyro.distributions.categorical import Categorical
+from pyro.distributions.relaxed_bernoulli import LogitRelaxedBernoulli, RelaxedBernoulli
 from pyro.distributions.cauchy import Cauchy
 from pyro.distributions.delta import Delta
 from pyro.distributions.dirichlet import Dirichlet
@@ -22,6 +23,8 @@ from pyro.distributions.uniform import Uniform
 bernoulli = RandomPrimitive(Bernoulli)
 beta = RandomPrimitive(Beta)
 categorical = RandomPrimitive(Categorical)
+logit_relaxed_bernoulli = RandomPrimitive(LogitRelaxedBernoulli)
+relaxed_bernoulli = RandomPrimitive(RelaxedBernoulli)
 cauchy = RandomPrimitive(Cauchy)
 delta = RandomPrimitive(Delta)
 dirichlet = RandomPrimitive(Dirichlet)
